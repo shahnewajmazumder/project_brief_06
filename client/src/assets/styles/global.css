@@ -1,0 +1,485 @@
+/* =====================================================
+   SHOPSPHERE - PROFESSIONAL E-COMMERCE GLOBAL CSS
+   ===================================================== */
+
+/* -------------------------
+   RESET
+------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    background: #f8fafc;
+    color: #0f172a;
+
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* =====================================================
+   APP
+===================================================== */
+
+.app {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #f8fafc;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+nav {
+    width: 100%;
+    height: 72px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-bottom: 1px solid #e5e7eb;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 7%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 1px 3px rgba(15, 23, 42, 0.04);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* =====================================================
+   SHOPSPHERE LOGO
+===================================================== */
+
+nav>a:first-child {
+    font-size: 22px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.6px;
+
+    color: #111827;
+
+    margin-right: auto;
+
+    transition: color 0.2s ease;
+}
+
+nav>a:first-child:hover {
+    color: #2563eb;
+}
+
+
+/* =====================================================
+   NAVIGATION LINKS
+===================================================== */
+
+nav>a {
+    position: relative;
+
+    margin-left: 8px;
+
+    padding: 10px 14px;
+
+    border-radius: 8px;
+
+    color: #475569;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+/* Hover */
+
+nav>a:hover {
+    color: #2563eb;
+
+    background: #eff6ff;
+}
+
+
+/* =====================================================
+   ACTIVE / HOME STYLE
+===================================================== */
+
+nav>a:nth-child(2) {
+    color: #111827;
+}
+
+
+/* =====================================================
+   LOGIN BUTTON
+===================================================== */
+
+nav>a:last-child {
+    margin-left: 14px;
+
+    padding: 10px 20px;
+
+    color: #ffffff;
+
+    background: #2563eb;
+
+    border-radius: 9px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 4px 10px rgba(37, 99, 235, 0.18);
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+nav>a:last-child:hover {
+    color: #ffffff;
+
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 16px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+main {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    flex: 1;
+
+    padding: 80px 40px;
+}
+
+
+/* =====================================================
+   HEADINGS
+===================================================== */
+
+main h1 {
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    font-weight: 800;
+
+    color: #0f172a;
+
+    margin-bottom: 18px;
+}
+
+main h1::first-letter {
+    color: #2563eb;
+}
+
+
+/* =====================================================
+   PARAGRAPHS
+===================================================== */
+
+main p {
+    max-width: 650px;
+
+    color: #64748b;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   PROFESSIONAL PAGE BACKGROUND
+===================================================== */
+
+main {
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 15% 15%,
+            rgba(37, 99, 235, 0.08),
+            transparent 30%),
+        radial-gradient(circle at 90% 80%,
+            rgba(59, 130, 246, 0.05),
+            transparent 30%);
+}
+
+
+/* =====================================================
+   PAGE CONTAINER
+===================================================== */
+
+main>* {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    width: 100%;
+
+    background: #0f172a;
+
+    color: #94a3b8;
+
+    padding: 28px 7%;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    border-top: 1px solid #1e293b;
+}
+
+footer p {
+    margin: 0 auto;
+
+    color: #94a3b8;
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 24px;
+
+    box-shadow:
+        0 4px 15px rgba(15, 23, 42, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(15, 23, 42, 0.09);
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+button {
+    border: none;
+
+    cursor: pointer;
+
+    padding: 11px 20px;
+
+    border-radius: 9px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 15px rgba(37, 99, 235, 0.2);
+}
+
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #0f172a;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =====================================================
+   RESPONSIVE NAVBAR
+===================================================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        height: auto;
+
+        min-height: 68px;
+
+        padding: 14px 24px;
+
+        flex-wrap: wrap;
+    }
+
+    nav>a:first-child {
+        font-size: 20px;
+    }
+
+    nav>a {
+        font-size: 13px;
+
+        padding: 8px 10px;
+
+        margin-left: 2px;
+    }
+
+    nav>a:last-child {
+        padding: 8px 15px;
+
+        margin-left: 6px;
+    }
+
+    main {
+        padding: 60px 24px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 520px) {
+
+    nav {
+        justify-content: flex-start;
+
+        gap: 5px;
+    }
+
+    nav>a:first-child {
+        width: 100%;
+
+        margin-bottom: 5px;
+    }
+
+    nav>a {
+        margin-left: 0;
+
+        font-size: 13px;
+    }
+
+    main {
+        padding: 45px 20px;
+    }
+
+    main h1 {
+        font-size: 38px;
+
+        letter-spacing: -1.5px;
+    }
+
+    main p {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,223 @@
+/* =====================================================
+   SHOPSPHERE NAVBAR
+   ===================================================== */
+
+.site-header {
+    width: 100%;
+
+    position: relative;
+
+    z-index: 100;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e9ec;
+}
+
+
+/* Main navbar */
+
+.navbar {
+    width: min(1180px, 90%);
+
+    height: 78px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.brand {
+    text-decoration: none;
+
+    color: #14232d;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+    transition: color 0.2s ease;
+}
+
+.brand:hover {
+    color: #2868e8;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+.nav-menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 32px;
+}
+
+
+/* Normal links */
+
+.nav-link {
+    position: relative;
+
+    padding: 8px 0;
+
+    text-decoration: none;
+
+    color: #52616a;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+/* Hover */
+
+.nav-link:hover {
+    color: #2868e8;
+}
+
+
+/* Active underline */
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #2868e8;
+
+    transition: width 0.2s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+/* Active */
+
+.nav-link.active {
+    color: #14232d;
+}
+
+
+/* =====================================================
+   LOGIN BUTTON
+   ===================================================== */
+
+.login-link {
+    padding: 11px 20px;
+
+    text-decoration: none;
+
+    background: #2868e8;
+
+    border: 1px solid #2868e8;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    transition: all 0.25s ease;
+}
+
+.login-link:hover {
+    background: #1d56c7;
+
+    border-color: #1d56c7;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 18px rgba(40, 104, 232, 0.20);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        width: 92%;
+
+        height: auto;
+
+        min-height: 72px;
+
+        padding: 14px 0;
+
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+    .nav-menu {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 18px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .brand {
+        font-size: 22px;
+    }
+
+    .nav-menu {
+        gap: 14px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+    }
+
+    .login-link {
+        padding: 9px 15px;
+    }
+}

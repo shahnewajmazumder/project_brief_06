@@ -1,0 +1,869 @@
+/* =========================================================
+   SHOPSPHERE
+   MODERN E-COMMERCE HOME PAGE
+   ========================================================= */
+
+.shop-home {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #ffffff;
+
+    color: #101d27;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.shop-hero {
+    width: 100%;
+    min-height: 720px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    padding: 70px 9% 90px;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(120deg,
+            #f4f8fc 0%,
+            #ffffff 55%,
+            #f5f8fb 100%);
+
+    border-bottom: 1px solid #e5e9ec;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LEFT HERO CONTENT
+   ========================================================= */
+
+.hero-content {
+    max-width: 600px;
+
+    padding-right: 50px;
+}
+
+.hero-label {
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+    padding: 8px 15px;
+
+    border-radius: 30px;
+
+    background: #e8f0ff;
+
+    color: #2868e8;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.hero-content h1 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(60px, 7vw, 105px);
+
+    line-height: 0.91;
+
+    letter-spacing: -5px;
+
+    font-weight: 700;
+
+    color: #101b25;
+}
+
+.hero-content h1 span {
+    color: #2868e8;
+}
+
+
+.hero-content p {
+    max-width: 500px;
+
+    margin-top: 35px;
+
+    color: #697780;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 13px;
+
+    margin-top: 32px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 15px 22px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.primary-btn {
+    border: 1px solid #2868e8;
+
+    background: #2868e8;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 8px 20px rgba(40, 104, 232, 0.18);
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+
+    background: #1d56c7;
+}
+
+
+.secondary-btn {
+    border: 1px solid #d5dce1;
+
+    background: #ffffff;
+
+    color: #182833;
+}
+
+.secondary-btn:hover {
+    border-color: #182833;
+}
+
+
+/* =========================================================
+   STATS
+   ========================================================= */
+
+.hero-stats {
+    display: flex;
+
+    gap: 45px;
+
+    margin-top: 55px;
+}
+
+.hero-stats div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.hero-stats strong {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 25px;
+
+    color: #111d27;
+}
+
+.hero-stats span {
+    color: #7c878e;
+
+    font-size: 9px;
+
+    letter-spacing: 0.8px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   RIGHT HERO VISUAL
+   ========================================================= */
+
+.hero-visual {
+    min-height: 550px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* =========================================================
+   MAIN SHOPPING CARD
+   ========================================================= */
+
+.shopping-card {
+    width: 430px;
+
+    height: 510px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 28px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e6ea;
+
+    box-shadow:
+        0 30px 70px rgba(25, 45, 60, 0.10);
+
+    transform: rotate(2deg);
+
+    transition: transform 0.4s ease;
+}
+
+.shopping-card:hover {
+    transform:
+        rotate(0deg) translateY(-8px);
+}
+
+
+/* card top */
+
+.card-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: #7b878e;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* card content */
+
+.card-content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.product-symbol {
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+    background: #eaf1ff;
+
+    color: #2868e8;
+
+    font-size: 28px;
+}
+
+.card-category {
+    margin-bottom: 13px;
+
+    color: #2868e8;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+}
+
+.card-content h2 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 48px;
+
+    line-height: 0.98;
+
+    letter-spacing: -2px;
+
+    color: #14232d;
+}
+
+.card-content p {
+    margin-top: 20px;
+
+    color: #78858c;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* card bottom */
+
+.card-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e3e7e9;
+
+    color: #263640;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   FLOATING LABELS
+   ========================================================= */
+
+.floating-label {
+    position: absolute;
+
+    padding: 13px 19px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e9eb;
+
+    box-shadow:
+        0 15px 35px rgba(30, 50, 65, 0.10);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+
+    z-index: 3;
+}
+
+.label-top {
+    top: 65px;
+
+    right: 20px;
+
+    color: #2868e8;
+}
+
+.label-bottom {
+    bottom: 70px;
+
+    left: 5px;
+
+    color: #394852;
+}
+
+
+/* =========================================================
+   MINI CARD
+   ========================================================= */
+
+.mini-card {
+    position: absolute;
+
+    right: 0;
+
+    bottom: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 15px 20px;
+
+    background: #14232d;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 18px 35px rgba(20, 35, 45, 0.20);
+}
+
+.mini-number {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 25px;
+
+    color: #7fa7ff;
+}
+
+.mini-card div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.mini-card small {
+    font-size: 7px;
+
+    letter-spacing: 1.2px;
+
+    color: #91a0a9;
+}
+
+.mini-card strong {
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   CATEGORY SECTION
+   ========================================================= */
+
+.category-section {
+    padding: 110px 9%;
+
+    background: #ffffff;
+}
+
+.section-heading span {
+    color: #7b878e;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    margin-top: 18px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    color: #152630;
+}
+
+
+/* =========================================================
+   CATEGORY LIST
+   ========================================================= */
+
+.category-list {
+    margin-top: 65px;
+
+    border-top: 1px solid #dfe4e7;
+}
+
+.category-item {
+    min-height: 95px;
+
+    display: grid;
+
+    grid-template-columns: 80px 1fr 1fr 50px;
+
+    align-items: center;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #dfe4e7;
+
+    transition: all 0.25s ease;
+}
+
+.category-item:hover {
+    padding-left: 15px;
+
+    background: #f7f9fa;
+}
+
+.category-item>span {
+    color: #9aa4aa;
+
+    font-size: 10px;
+}
+
+.category-item h3 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 22px;
+
+    font-weight: 500;
+}
+
+.category-item p {
+    color: #7b878e;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 13px;
+}
+
+.category-item b {
+    font-size: 18px;
+
+    font-weight: 400;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   BRAND SECTION
+   ========================================================= */
+
+.brand-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    padding: 110px 12%;
+
+    background: #f3f7fa;
+}
+
+.brand-section>div:first-child span {
+    color: #6e7c84;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.brand-section h2 {
+    margin-top: 20px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(45px, 5vw, 72px);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+}
+
+.brand-section h2 em {
+    color: #2868e8;
+
+    font-style: normal;
+}
+
+.brand-description {
+    align-self: center;
+
+    max-width: 450px;
+}
+
+.brand-description p {
+    color: #687780;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.brand-description button {
+    margin-top: 25px;
+
+    padding: 14px 20px;
+
+    border: 1px solid #172a34;
+
+    background: #172a34;
+
+    color: #ffffff;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.brand-description button:hover {
+    background: #2868e8;
+
+    border-color: #2868e8;
+}
+
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+.features-section {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    padding: 80px 9%;
+
+    gap: 50px;
+}
+
+.features-section>div {
+    padding-right: 35px;
+
+    border-right: 1px solid #dfe4e7;
+}
+
+.features-section>div:last-child {
+    border-right: none;
+}
+
+.features-section span {
+    color: #9aa4aa;
+
+    font-size: 10px;
+}
+
+.features-section h3 {
+    margin: 18px 0 10px;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+.features-section p {
+    max-width: 280px;
+
+    color: #7a868c;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .shop-hero {
+        grid-template-columns: 1fr;
+
+        padding: 70px 7%;
+    }
+
+    .hero-content {
+        max-width: 700px;
+
+        padding-right: 0;
+    }
+
+    .hero-visual {
+        margin-top: 60px;
+    }
+
+    .brand-section {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .shop-hero {
+        padding: 55px 25px 70px;
+    }
+
+    .hero-content h1 {
+        font-size: 62px;
+
+        letter-spacing: -3px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .hero-stats {
+        gap: 25px;
+    }
+
+    .hero-visual {
+        min-height: 480px;
+    }
+
+    .shopping-card {
+        width: 90%;
+
+        height: 430px;
+    }
+
+    .card-content h2 {
+        font-size: 40px;
+    }
+
+    .label-top {
+        right: 0;
+    }
+
+    .label-bottom {
+        left: 0;
+    }
+
+    .mini-card {
+        right: 0;
+    }
+
+    .category-section {
+        padding: 75px 25px;
+    }
+
+    .category-item {
+        grid-template-columns: 40px 1fr 35px;
+    }
+
+    .category-item p {
+        display: none;
+    }
+
+    .brand-section {
+        padding: 75px 25px;
+    }
+
+    .features-section {
+        grid-template-columns: 1fr;
+
+        padding: 60px 25px;
+
+        gap: 30px;
+    }
+
+    .features-section>div {
+        padding-right: 0;
+
+        padding-bottom: 30px;
+
+        border-right: none;
+
+        border-bottom: 1px solid #dfe4e7;
+    }
+
+    .features-section>div:last-child {
+        border-bottom: none;
+    }
+}
