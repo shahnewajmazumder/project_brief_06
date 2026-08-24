@@ -59,15 +59,12 @@ function Navbar() {
                         Profile
                     </NavLink>
 
-                    <NavLink
-                        to="/login"
-                        className="login-link"
-                    >
+                    {/* Login */}
+                    <NavLink to="/login" className="login-link">
                         Login
                     </NavLink>
 
                 </nav>
-
             </div>
         </header>
     );
