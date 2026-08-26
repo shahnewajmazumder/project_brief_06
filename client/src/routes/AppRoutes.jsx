@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import MainLayout from "../layouts/mainlayout";
+import AuthLayout from "../layouts/AuthLayout";
 
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
@@ -13,23 +14,37 @@ import NotFound from "../pages/NotFound/NotFound";
 function AppRoutes() {
     return (
         <Routes>
-            {/* Main Website Layout */}
+
+            {/* ================= MAIN WEBSITE LAYOUT ================= */}
+
             <Route path="/" element={<MainLayout />}>
 
                 {/* Home */}
                 <Route index element={<Home />} />
 
                 {/* Other Pages */}
-                <Route path="login" element={<Login />} />
                 <Route path="products" element={<Products />} />
                 <Route path="about" element={<About />} />
                 <Route path="dashboard" element={<Dashboard />} />
                 <Route path="profile" element={<Profile />} />
 
-                {/* 404 Page */}
-                <Route path="*" element={<NotFound />} />
+            </Route>
+
+
+            {/* ================= AUTHENTICATION LAYOUT ================= */}
+
+            <Route element={<AuthLayout />}>
+
+                {/* Login */}
+                <Route path="/login" element={<Login />} />
 
             </Route>
+
+
+            {/* ================= 404 PAGE ================= */}
+
+            <Route path="*" element={<NotFound />} />
+
         </Routes>
     );
 }

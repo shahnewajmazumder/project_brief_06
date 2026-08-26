@@ -6,9 +6,7 @@
 .shop-home {
     width: 100%;
     min-height: 100vh;
-
     background: #ffffff;
-
     color: #101d27;
 }
 
@@ -22,13 +20,10 @@
     min-height: 720px;
 
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     align-items: center;
 
     padding: 70px 9% 90px;
-
     box-sizing: border-box;
 
     background:
@@ -38,7 +33,6 @@
             #f5f8fb 100%);
 
     border-bottom: 1px solid #e5e9ec;
-
     overflow: hidden;
 }
 
@@ -49,7 +43,6 @@
 
 .hero-content {
     max-width: 600px;
-
     padding-right: 50px;
 }
 
@@ -57,22 +50,17 @@
     display: inline-block;
 
     margin-bottom: 25px;
-
     padding: 8px 15px;
 
     border-radius: 30px;
 
     background: #e8f0ff;
-
     color: #2868e8;
 
     font-size: 10px;
-
     font-weight: 700;
-
     letter-spacing: 1.5px;
 }
-
 
 .hero-content h1 {
     margin: 0;
@@ -83,11 +71,8 @@
         serif;
 
     font-size: clamp(60px, 7vw, 105px);
-
     line-height: 0.91;
-
     letter-spacing: -5px;
-
     font-weight: 700;
 
     color: #101b25;
@@ -96,7 +81,6 @@
 .hero-content h1 span {
     color: #2868e8;
 }
-
 
 .hero-content p {
     max-width: 500px;
@@ -111,43 +95,39 @@
         serif;
 
     font-size: 17px;
-
     line-height: 1.75;
 }
 
 
 /* =========================================================
-   BUTTONS
+   HERO BUTTONS
    ========================================================= */
 
 .hero-buttons {
     display: flex;
-
     gap: 13px;
-
     margin-top: 32px;
 }
 
 .primary-btn,
 .secondary-btn {
+    display: inline-block;
+
     padding: 15px 22px;
 
     font-size: 10px;
-
     font-weight: 700;
-
     letter-spacing: 0.5px;
 
     cursor: pointer;
+    text-decoration: none;
 
     transition: all 0.25s ease;
 }
 
 .primary-btn {
     border: 1px solid #2868e8;
-
     background: #2868e8;
-
     color: #ffffff;
 
     box-shadow:
@@ -156,21 +136,19 @@
 
 .primary-btn:hover {
     transform: translateY(-2px);
-
     background: #1d56c7;
+    color: #ffffff;
 }
-
 
 .secondary-btn {
     border: 1px solid #d5dce1;
-
     background: #ffffff;
-
     color: #182833;
 }
 
 .secondary-btn:hover {
     border-color: #182833;
+    color: #182833;
 }
 
 
@@ -180,17 +158,13 @@
 
 .hero-stats {
     display: flex;
-
     gap: 45px;
-
     margin-top: 55px;
 }
 
 .hero-stats div {
     display: flex;
-
     flex-direction: column;
-
     gap: 4px;
 }
 
@@ -201,7 +175,6 @@
         serif;
 
     font-size: 25px;
-
     color: #111d27;
 }
 
@@ -209,9 +182,7 @@
     color: #7c878e;
 
     font-size: 9px;
-
     letter-spacing: 0.8px;
-
     text-transform: uppercase;
 }
 
@@ -226,9 +197,7 @@
     position: relative;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 }
 
@@ -239,19 +208,15 @@
 
 .shopping-card {
     width: 430px;
-
     height: 510px;
 
     position: relative;
 
     display: flex;
-
     flex-direction: column;
-
     justify-content: space-between;
 
     padding: 28px;
-
     box-sizing: border-box;
 
     background: #ffffff;
@@ -272,50 +237,44 @@
 }
 
 
-/* card top */
+/* =========================================================
+   CARD TOP
+   ========================================================= */
 
 .card-top {
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
     color: #7b878e;
 
     font-size: 9px;
-
     font-weight: 700;
-
     letter-spacing: 1.5px;
 }
 
 
-/* card content */
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
 
 .card-content {
     display: flex;
-
     flex-direction: column;
-
     align-items: flex-start;
 }
 
 .product-symbol {
     width: 65px;
-
     height: 65px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     margin-bottom: 30px;
 
     background: #eaf1ff;
-
     color: #2868e8;
 
     font-size: 28px;
@@ -327,9 +286,7 @@
     color: #2868e8;
 
     font-size: 9px;
-
     font-weight: 700;
-
     letter-spacing: 1.4px;
 }
 
@@ -342,9 +299,7 @@
         serif;
 
     font-size: 48px;
-
     line-height: 0.98;
-
     letter-spacing: -2px;
 
     color: #14232d;
@@ -361,18 +316,17 @@
         serif;
 
     font-size: 15px;
-
     line-height: 1.6;
 }
 
 
-/* card bottom */
+/* =========================================================
+   CARD BOTTOM
+   ========================================================= */
 
 .card-bottom {
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
     padding-top: 20px;
@@ -382,10 +336,16 @@
     color: #263640;
 
     font-size: 9px;
-
     font-weight: 700;
-
     letter-spacing: 1px;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.card-bottom:hover {
+    color: #2868e8;
 }
 
 
@@ -406,9 +366,7 @@
         0 15px 35px rgba(30, 50, 65, 0.10);
 
     font-size: 9px;
-
     font-weight: 700;
-
     letter-spacing: 0.7px;
 
     z-index: 3;
@@ -416,7 +374,6 @@
 
 .label-top {
     top: 65px;
-
     right: 20px;
 
     color: #2868e8;
@@ -424,7 +381,6 @@
 
 .label-bottom {
     bottom: 70px;
-
     left: 5px;
 
     color: #394852;
@@ -439,11 +395,9 @@
     position: absolute;
 
     right: 0;
-
     bottom: 5px;
 
     display: flex;
-
     align-items: center;
 
     gap: 14px;
@@ -451,7 +405,6 @@
     padding: 15px 20px;
 
     background: #14232d;
-
     color: #ffffff;
 
     box-shadow:
@@ -465,23 +418,18 @@
         serif;
 
     font-size: 25px;
-
     color: #7fa7ff;
 }
 
 .mini-card div {
     display: flex;
-
     flex-direction: column;
-
     gap: 5px;
 }
 
 .mini-card small {
     font-size: 7px;
-
     letter-spacing: 1.2px;
-
     color: #91a0a9;
 }
 
@@ -496,7 +444,6 @@
 
 .category-section {
     padding: 110px 9%;
-
     background: #ffffff;
 }
 
@@ -504,9 +451,7 @@
     color: #7b878e;
 
     font-size: 9px;
-
     font-weight: 700;
-
     letter-spacing: 1.5px;
 }
 
@@ -519,9 +464,7 @@
         serif;
 
     font-size: clamp(40px, 5vw, 65px);
-
     line-height: 1;
-
     letter-spacing: -3px;
 
     color: #152630;
@@ -534,7 +477,6 @@
 
 .category-list {
     margin-top: 65px;
-
     border-top: 1px solid #dfe4e7;
 }
 
@@ -543,7 +485,8 @@
 
     display: grid;
 
-    grid-template-columns: 80px 1fr 1fr 50px;
+    grid-template-columns:
+        80px 1fr 1fr 50px;
 
     align-items: center;
 
@@ -552,17 +495,20 @@
     border-bottom: 1px solid #dfe4e7;
 
     transition: all 0.25s ease;
+
+    /* IMPORTANT because category-item is now NavLink */
+    text-decoration: none;
+    color: #101d27;
 }
 
 .category-item:hover {
     padding-left: 15px;
-
     background: #f7f9fa;
+    color: #101d27;
 }
 
 .category-item>span {
     color: #9aa4aa;
-
     font-size: 10px;
 }
 
@@ -575,7 +521,6 @@
         serif;
 
     font-size: 22px;
-
     font-weight: 500;
 }
 
@@ -592,9 +537,7 @@
 
 .category-item b {
     font-size: 18px;
-
     font-weight: 400;
-
     text-align: right;
 }
 
@@ -619,9 +562,7 @@
     color: #6e7c84;
 
     font-size: 9px;
-
     font-weight: 700;
-
     letter-spacing: 1.5px;
 }
 
@@ -634,21 +575,17 @@
         serif;
 
     font-size: clamp(45px, 5vw, 72px);
-
     line-height: 0.95;
-
     letter-spacing: -4px;
 }
 
 .brand-section h2 em {
     color: #2868e8;
-
     font-style: normal;
 }
 
 .brand-description {
     align-self: center;
-
     max-width: 450px;
 }
 
@@ -661,11 +598,18 @@
         serif;
 
     font-size: 17px;
-
     line-height: 1.8;
 }
 
-.brand-description button {
+
+/* =========================================================
+   ABOUT BUTTON
+   IMPORTANT: It is now a NavLink, not a button
+   ========================================================= */
+
+.brand-description .about-button {
+    display: inline-block;
+
     margin-top: 25px;
 
     padding: 14px 20px;
@@ -673,22 +617,22 @@
     border: 1px solid #172a34;
 
     background: #172a34;
-
     color: #ffffff;
 
     font-size: 9px;
-
     font-weight: 700;
 
     cursor: pointer;
 
+    text-decoration: none;
+
     transition: 0.2s ease;
 }
 
-.brand-description button:hover {
+.brand-description .about-button:hover {
     background: #2868e8;
-
     border-color: #2868e8;
+    color: #ffffff;
 }
 
 
@@ -709,7 +653,6 @@
 
 .features-section>div {
     padding-right: 35px;
-
     border-right: 1px solid #dfe4e7;
 }
 
@@ -719,7 +662,6 @@
 
 .features-section span {
     color: #9aa4aa;
-
     font-size: 10px;
 }
 
@@ -727,7 +669,6 @@
     margin: 18px 0 10px;
 
     font-size: 13px;
-
     letter-spacing: 1px;
 }
 
@@ -742,26 +683,23 @@
         serif;
 
     font-size: 14px;
-
     line-height: 1.6;
 }
 
 
 /* =========================================================
-   RESPONSIVE
+   RESPONSIVE - TABLET
    ========================================================= */
 
 @media (max-width: 1000px) {
 
     .shop-hero {
         grid-template-columns: 1fr;
-
         padding: 70px 7%;
     }
 
     .hero-content {
         max-width: 700px;
-
         padding-right: 0;
     }
 
@@ -771,11 +709,14 @@
 
     .brand-section {
         grid-template-columns: 1fr;
-
         gap: 30px;
     }
 }
 
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+   ========================================================= */
 
 @media (max-width: 650px) {
 
@@ -785,7 +726,6 @@
 
     .hero-content h1 {
         font-size: 62px;
-
         letter-spacing: -3px;
     }
 
@@ -795,7 +735,6 @@
 
     .hero-buttons {
         flex-direction: column;
-
         align-items: flex-start;
     }
 
@@ -809,7 +748,6 @@
 
     .shopping-card {
         width: 90%;
-
         height: 430px;
     }
 
@@ -855,11 +793,9 @@
 
     .features-section>div {
         padding-right: 0;
-
         padding-bottom: 30px;
 
         border-right: none;
-
         border-bottom: 1px solid #dfe4e7;
     }
 

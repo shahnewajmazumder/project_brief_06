@@ -14,8 +14,10 @@ function Navbar() {
                 {/* Navigation */}
                 <nav className="nav-menu">
 
+                    {/* Home */}
                     <NavLink
                         to="/"
+                        end
                         className={({ isActive }) =>
                             isActive ? "nav-link active" : "nav-link"
                         }
@@ -23,6 +25,7 @@ function Navbar() {
                         Home
                     </NavLink>
 
+                    {/* Products */}
                     <NavLink
                         to="/products"
                         className={({ isActive }) =>
@@ -32,6 +35,7 @@ function Navbar() {
                         Products
                     </NavLink>
 
+                    {/* About */}
                     <NavLink
                         to="/about"
                         className={({ isActive }) =>
@@ -41,6 +45,7 @@ function Navbar() {
                         About
                     </NavLink>
 
+                    {/* Dashboard */}
                     <NavLink
                         to="/dashboard"
                         className={({ isActive }) =>
@@ -50,6 +55,7 @@ function Navbar() {
                         Dashboard
                     </NavLink>
 
+                    {/* Profile */}
                     <NavLink
                         to="/profile"
                         className={({ isActive }) =>
@@ -60,11 +66,28 @@ function Navbar() {
                     </NavLink>
 
                     {/* Login */}
-                    <NavLink to="/login" className="login-link">
+                    <NavLink
+                        to="/login"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "login-link active"
+                                : "login-link"
+                        }
+                    >
                         Login
                     </NavLink>
 
                 </nav>
+
+                {/* Basic responsive menu button */}
+                <button
+                    type="button"
+                    className="menu-button"
+                    aria-label="Open navigation menu"
+                >
+                    ☰
+                </button>
+
             </div>
         </header>
     );

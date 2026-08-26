@@ -1,10 +1,11 @@
+import { NavLink } from "react-router-dom";
 import "./Home.css";
 
 function Home() {
     return (
         <div className="shop-home">
 
-            {/* ================= HERO ================= */}
+            {/* ================= HERO SECTION ================= */}
 
             <section className="shop-hero">
 
@@ -30,17 +31,25 @@ function Home() {
 
                     <div className="hero-buttons">
 
-                        <button className="primary-btn">
+                        {/* Go to Products */}
+                        <NavLink
+                            to="/products"
+                            className="primary-btn"
+                        >
                             EXPLORE PRODUCTS →
-                        </button>
+                        </NavLink>
 
-                        <button className="secondary-btn">
+                        {/* Go to Products for categories */}
+                        <NavLink
+                            to="/products"
+                            className="secondary-btn"
+                        >
                             VIEW CATEGORIES
-                        </button>
+                        </NavLink>
 
                     </div>
 
-                    {/* Statistics */}
+                    {/* ================= STATISTICS ================= */}
 
                     <div className="hero-stats">
 
@@ -71,7 +80,6 @@ function Home() {
                     <div className="floating-label label-top">
                         ⚡ BEST SELLERS
                     </div>
-
 
                     <div className="shopping-card">
 
@@ -109,13 +117,13 @@ function Home() {
                         </div>
 
 
-                        <div className="card-bottom">
-
+                        <NavLink
+                            to="/products"
+                            className="card-bottom"
+                        >
                             <span>EXPLORE COLLECTION</span>
-
                             <span>↗</span>
-
-                        </div>
+                        </NavLink>
 
                     </div>
 
@@ -132,6 +140,7 @@ function Home() {
                         </span>
 
                         <div>
+
                             <small>
                                 SHOPSPHERE
                             </small>
@@ -139,6 +148,7 @@ function Home() {
                             <strong>
                                 Smart Shopping
                             </strong>
+
                         </div>
 
                     </div>
@@ -169,33 +179,48 @@ function Home() {
 
                 <div className="category-list">
 
-                    <div className="category-item">
+                    <NavLink
+                        to="/products"
+                        className="category-item"
+                    >
                         <span>01</span>
                         <h3>Electronics</h3>
                         <p>Technology for everyday life</p>
                         <b>↗</b>
-                    </div>
+                    </NavLink>
 
-                    <div className="category-item">
+
+                    <NavLink
+                        to="/products"
+                        className="category-item"
+                    >
                         <span>02</span>
                         <h3>Fashion</h3>
                         <p>Style made simple</p>
                         <b>↗</b>
-                    </div>
+                    </NavLink>
 
-                    <div className="category-item">
+
+                    <NavLink
+                        to="/products"
+                        className="category-item"
+                    >
                         <span>03</span>
                         <h3>Home & Living</h3>
                         <p>Make your space better</p>
                         <b>↗</b>
-                    </div>
+                    </NavLink>
 
-                    <div className="category-item">
+
+                    <NavLink
+                        to="/products"
+                        className="category-item"
+                    >
                         <span>04</span>
                         <h3>Accessories</h3>
                         <p>Complete your everyday style</p>
                         <b>↗</b>
-                    </div>
+                    </NavLink>
 
                 </div>
 
@@ -231,38 +256,49 @@ function Home() {
                         convenient platform.
                     </p>
 
-                    <button>
+                    <NavLink
+                        to="/about"
+                        className="about-button"
+                    >
                         ABOUT SHOPSPHERE →
-                    </button>
+                    </NavLink>
 
                 </div>
 
             </section>
 
 
-            {/* ================= FEATURES ================= */}
+            {/* ================= FEATURES SECTION ================= */}
 
             <section className="features-section">
 
                 <div>
                     <span>01</span>
+
                     <h3>QUALITY</h3>
+
                     <p>
                         Carefully selected products for your everyday needs.
                     </p>
                 </div>
 
+
                 <div>
                     <span>02</span>
+
                     <h3>SECURE</h3>
+
                     <p>
                         A reliable and secure online shopping experience.
                     </p>
                 </div>
 
+
                 <div>
                     <span>03</span>
+
                     <h3>CONVENIENT</h3>
+
                     <p>
                         Discover, compare and shop everything in one place.
                     </p>
