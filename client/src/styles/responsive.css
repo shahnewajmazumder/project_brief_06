@@ -1,0 +1,93 @@
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .footer-content {
+        padding: 30px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+        min-height: 64px;
+    }
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .login-link {
+        padding: 10px 15px;
+    }
+
+    .footer-content {
+        padding: 25px 20px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 12px 15px;
+        min-height: 60px;
+    }
+
+    .nav-menu {
+        gap: 6px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        padding: 6px 7px;
+    }
+
+    .login-link {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    .footer-content {
+        padding: 30px 20px;
+    }
+
+    /* Sprint 8 - mobile product cards */
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
