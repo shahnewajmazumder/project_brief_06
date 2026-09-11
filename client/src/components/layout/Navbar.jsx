@@ -8,13 +8,13 @@ function Navbar() {
 
                 {/* Logo */}
                 <NavLink to="/" className="brand">
-                    ShopSphere
+                    Eventlify
                 </NavLink>
 
                 {/* Navigation */}
                 <nav className="nav-menu">
 
-                    {/* Home */}
+                    {/* Homepage */}
                     <NavLink
                         to="/"
                         end
@@ -22,17 +22,17 @@ function Navbar() {
                             isActive ? "nav-link active" : "nav-link"
                         }
                     >
-                        Home
+                        Homepage
                     </NavLink>
 
-                    {/* Products */}
+                    {/* Venue */}
                     <NavLink
                         to="/products"
                         className={({ isActive }) =>
                             isActive ? "nav-link active" : "nav-link"
                         }
                     >
-                        Products
+                        Venue
                     </NavLink>
 
                     {/* About */}
@@ -45,27 +45,27 @@ function Navbar() {
                         About
                     </NavLink>
 
-                    {/* Dashboard */}
+                    {/* Suppliers */}
                     <NavLink
                         to="/dashboard"
                         className={({ isActive }) =>
                             isActive ? "nav-link active" : "nav-link"
                         }
                     >
-                        Dashboard
+                        Suppliers
                     </NavLink>
 
-                    {/* Profile */}
+                    {/* Media */}
                     <NavLink
                         to="/profile"
                         className={({ isActive }) =>
                             isActive ? "nav-link active" : "nav-link"
                         }
                     >
-                        Profile
+                        Media
                     </NavLink>
 
-                    {/* Login */}
+                    {/* Contact Us */}
                     <NavLink
                         to="/login"
                         className={({ isActive }) =>

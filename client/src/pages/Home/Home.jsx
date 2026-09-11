@@ -12,39 +12,39 @@ function Home() {
                 <div className="hero-content">
 
                     <span className="hero-label">
-                        SHOPSPHERE • ONLINE SHOPPING
+                        EVENT MANAGEMENT • PLAN YOUR EVENT
                     </span>
 
                     <h1>
-                        Shop.
+                        Plan.
                         <br />
-                        <span>Discover.</span>
+                        <span>Celebrate.</span>
                         <br />
-                        Enjoy.
+                        Remember.
                     </h1>
 
                     <p>
-                        Discover products you'll love, from everyday
-                        essentials to fashion, technology and lifestyle.
-                        Shop smarter with ShopSphere.
+                        Discover beautiful venues and trusted suppliers
+                        for weddings, parties, conferences and special events.
+                        Plan your perfect event with ease.
                     </p>
 
                     <div className="hero-buttons">
 
-                        {/* Go to Products */}
+                        {/* Go to Venues */}
                         <NavLink
                             to="/products"
                             className="primary-btn"
                         >
-                            EXPLORE PRODUCTS →
+                            EXPLORE VENUES →
                         </NavLink>
 
-                        {/* Go to Products for categories */}
+                        {/* Go to Venues for categories */}
                         <NavLink
                             to="/products"
                             className="secondary-btn"
                         >
-                            VIEW CATEGORIES
+                            VIEW EVENT CATEGORIES
                         </NavLink>
 
                     </div>
@@ -55,17 +55,17 @@ function Home() {
 
                         <div>
                             <strong>100+</strong>
-                            <span>Products</span>
+                            <span>Venues</span>
                         </div>
 
                         <div>
                             <strong>20+</strong>
-                            <span>Categories</span>
+                            <span>Event Categories</span>
                         </div>
 
                         <div>
                             <strong>1K+</strong>
-                            <span>Customers</span>
+                            <span>Happy Clients</span>
                         </div>
 
                     </div>
@@ -78,14 +78,14 @@ function Home() {
                 <div className="hero-visual">
 
                     <div className="floating-label label-top">
-                        ⚡ BEST SELLERS
+                        ✦ FEATURED EVENTS
                     </div>
 
                     <div className="shopping-card">
 
                         <div className="card-top">
 
-                            <span>SHOPSPHERE</span>
+                            <span>EVENT MANAGEMENT</span>
 
                             <span>01 / 04</span>
 
@@ -99,19 +99,19 @@ function Home() {
                             </div>
 
                             <span className="card-category">
-                                FEATURED COLLECTION
+                                FEATURED EVENT
                             </span>
 
                             <h2>
-                                Everyday
+                                Your Event
                                 <br />
-                                Essentials
+                                Your Way
                             </h2>
 
                             <p>
-                                Simple products.
+                                Plan beautifully.
                                 <br />
-                                Better living.
+                                Celebrate perfectly.
                             </p>
 
                         </div>
@@ -121,7 +121,7 @@ function Home() {
                             to="/products"
                             className="card-bottom"
                         >
-                            <span>EXPLORE COLLECTION</span>
+                            <span>EXPLORE VENUES</span>
                             <span>↗</span>
                         </NavLink>
 
@@ -129,7 +129,7 @@ function Home() {
 
 
                     <div className="floating-label label-bottom">
-                        ✦ NEW ARRIVALS
+                        ✦ POPULAR VENUES
                     </div>
 
 
@@ -142,11 +142,11 @@ function Home() {
                         <div>
 
                             <small>
-                                SHOPSPHERE
+                                EVENT MANAGEMENT
                             </small>
 
                             <strong>
-                                Smart Shopping
+                                Perfect Events
                             </strong>
 
                         </div>
@@ -165,13 +165,13 @@ function Home() {
                 <div className="section-heading">
 
                     <span>
-                        EXPLORE SHOPSPHERE
+                        EXPLORE EVENTS
                     </span>
 
                     <h2>
                         Everything you need,
                         <br />
-                        in one place.
+                        to make it memorable.
                     </h2>
 
                 </div>
@@ -184,8 +184,8 @@ function Home() {
                         className="category-item"
                     >
                         <span>01</span>
-                        <h3>Electronics</h3>
-                        <p>Technology for everyday life</p>
+                        <h3>Weddings</h3>
+                        <p>Beautiful venues for your special day</p>
                         <b>↗</b>
                     </NavLink>
 
@@ -195,8 +195,8 @@ function Home() {
                         className="category-item"
                     >
                         <span>02</span>
-                        <h3>Fashion</h3>
-                        <p>Style made simple</p>
+                        <h3>Corporate Events</h3>
+                        <p>Professional spaces for every occasion</p>
                         <b>↗</b>
                     </NavLink>
 
@@ -206,8 +206,8 @@ function Home() {
                         className="category-item"
                     >
                         <span>03</span>
-                        <h3>Home & Living</h3>
-                        <p>Make your space better</p>
+                        <h3>Parties</h3>
+                        <p>Celebrate birthdays and special moments</p>
                         <b>↗</b>
                     </NavLink>
 
@@ -217,8 +217,8 @@ function Home() {
                         className="category-item"
                     >
                         <span>04</span>
-                        <h3>Accessories</h3>
-                        <p>Complete your everyday style</p>
+                        <h3>Social Events</h3>
+                        <p>Make every gathering unforgettable</p>
                         <b>↗</b>
                     </NavLink>
 
@@ -234,15 +234,15 @@ function Home() {
                 <div>
 
                     <span>
-                        THE SHOPSPHERE EXPERIENCE
+                        THE EVENT MANAGEMENT EXPERIENCE
                     </span>
 
                     <h2>
                         WE MAKE
                         <br />
-                        SHOPPING
+                        EVENTS
                         <br />
-                        <em>SIMPLER.</em>
+                        <em>MEMORABLE.</em>
                     </h2>
 
                 </div>
@@ -251,16 +251,16 @@ function Home() {
                 <div className="brand-description">
 
                     <p>
-                        ShopSphere brings products, categories and
-                        shopping experiences together in one clean,
-                        convenient platform.
+                        Our Event Management System brings venues,
+                        suppliers and event services together in one
+                        simple and convenient platform.
                     </p>
 
                     <NavLink
                         to="/about"
                         className="about-button"
                     >
-                        ABOUT SHOPSPHERE →
+                        ABOUT OUR SERVICE →
                     </NavLink>
 
                 </div>
@@ -278,7 +278,7 @@ function Home() {
                     <h3>QUALITY</h3>
 
                     <p>
-                        Carefully selected products for your everyday needs.
+                        Discover trusted venues and suppliers for your event.
                     </p>
                 </div>
 
@@ -286,10 +286,10 @@ function Home() {
                 <div>
                     <span>02</span>
 
-                    <h3>SECURE</h3>
+                    <h3>RELIABLE</h3>
 
                     <p>
-                        A reliable and secure online shopping experience.
+                        Plan your event with dependable services and support.
                     </p>
                 </div>
 
@@ -300,7 +300,7 @@ function Home() {
                     <h3>CONVENIENT</h3>
 
                     <p>
-                        Discover, compare and shop everything in one place.
+                        Find venues and event services in one convenient place.
                     </p>
                 </div>
 

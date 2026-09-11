@@ -1,8 +1,12 @@
 function Profile() {
     return (
         <div>
-            <h1>Profile Page</h1>
-            <p>This is your profile.</p>
+            <h1>Event Media</h1>
+
+            <p>
+                Explore photos, videos and memorable moments
+                from our events and celebrations.
+            </p>
         </div>
     );
 }

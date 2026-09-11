@@ -8,11 +8,11 @@ function Login() {
 
                 {/* Brand */}
                 <div className="login-brand">
-                    <div className="brand-icon">S</div>
+                    <div className="brand-icon">E</div>
 
-                    <h1>ShopSphere</h1>
+                    <h1>Eventlify</h1>
 
-                    <p>Shop smart. Live better.</p>
+                    <p>Plan better. Celebrate more.</p>
                 </div>
 
 
@@ -23,7 +23,7 @@ function Login() {
                         <h2>Welcome Back</h2>
 
                         <p>
-                            Login to continue shopping with ShopSphere
+                            Login to continue planning your perfect event.
                         </p>
                     </div>
 
@@ -100,7 +100,7 @@ function Login() {
 
                     {/* Back */}
                     <a href="/" className="back-home">
-                        ← Back to ShopSphere
+                        ← Back to Eventlify
                     </a>
 
                 </div>

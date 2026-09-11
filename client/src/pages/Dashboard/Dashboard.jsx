@@ -1,8 +1,12 @@
 function Dashboard() {
     return (
         <div>
-            <h1>Dashboard</h1>
-            <p>Welcome to your dashboard.</p>
+            <h1>Our Suppliers</h1>
+
+            <p>
+                Find trusted suppliers and professional services
+                for your perfect event.
+            </p>
         </div>
     );
 }

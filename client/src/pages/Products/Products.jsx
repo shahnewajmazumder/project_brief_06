@@ -3,29 +3,35 @@ import Card from "../../components/ui/Card";
 function Products() {
     return (
         <div className="products-page">
-            <h1>Products</h1>
-            <p>Explore our products.</p>
+            <h1>Our Venues</h1>
+
+            <p>
+                Find the perfect venue for your wedding,
+                celebration, conference or special event.
+            </p>
 
             <div className="card-grid">
+
                 <Card
-                    title="Smartphone"
-                    description="Latest smartphone with modern features."
+                    title="Wedding Venues"
+                    description="Beautiful spaces designed for your special day."
                 />
 
                 <Card
-                    title="Laptop"
-                    description="Powerful laptop for work and entertainment."
+                    title="Banquet Halls"
+                    description="Elegant halls for weddings, parties and celebrations."
                 />
 
                 <Card
-                    title="Headphones"
-                    description="Enjoy clear and immersive sound."
+                    title="Resort Venues"
+                    description="Relaxing and scenic locations for memorable events."
                 />
 
                 <Card
-                    title="Smart Watch"
-                    description="Track your activities and stay connected."
+                    title="Outdoor Venues"
+                    description="Open-air spaces perfect for unique celebrations."
                 />
+
             </div>
         </div>
     );
