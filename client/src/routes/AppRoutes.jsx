@@ -28,6 +28,9 @@ function AppRoutes() {
                 <Route path="dashboard" element={<Dashboard />} />
                 <Route path="profile" element={<Profile />} />
 
+                {/* 404 Page */}
+                <Route path="*" element={<NotFound />} />
+
             </Route>
 
 
@@ -40,10 +43,6 @@ function AppRoutes() {
 
             </Route>
 
-
-            {/* ================= 404 PAGE ================= */}
-
-            <Route path="*" element={<NotFound />} />
 
         </Routes>
     );
