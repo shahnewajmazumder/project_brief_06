@@ -1,9 +1,18 @@
 import { NavLink } from "react-router-dom";
+import Welcome from "../../components/ui/Welcome";
 import "./Home.css";
 
 function Home() {
     return (
         <div className="shop-home">
+
+            {/* ================= WELCOME COMPONENT ================= */}
+
+            <Welcome
+                name="Event Manager"
+                project="Event Management System"
+            />
+
 
             {/* ================= HERO SECTION ================= */}
 

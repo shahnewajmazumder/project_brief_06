@@ -1,14 +1,14 @@
 import Card from "../../components/ui/Card";
+import PageTitle from "../../components/ui/PageTitle";
 
 function Products() {
     return (
         <div className="products-page">
-            <h1>Our Venues</h1>
 
-            <p>
-                Find the perfect venue for your wedding,
-                celebration, conference or special event.
-            </p>
+            <PageTitle
+                title="Our Venues"
+                description="Find the perfect venue for your wedding, celebration, conference or special event."
+            />
 
             <div className="card-grid">
 

@@ -1,13 +1,12 @@
+import PageTitle from "../../components/ui/PageTitle";
+
 function About() {
     return (
         <div>
-            <h1>About Eventlify</h1>
-
-            <p>
-                Eventlify is an event management platform that helps
-                people discover venues, connect with trusted suppliers,
-                and plan memorable events with ease.
-            </p>
+            <PageTitle
+                title="About Eventlify"
+                description="Eventlify is an event management platform that helps people discover venues, connect with trusted suppliers, and plan memorable events with ease."
+            />
         </div>
     );
 }
