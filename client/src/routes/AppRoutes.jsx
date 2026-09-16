@@ -9,6 +9,7 @@ import Products from "../pages/Products/Products";
 import About from "../pages/About/About";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Profile from "../pages/Profile/Profile";
+import EventBooking from "../pages/EventBooking/EventBooking";
 import NotFound from "../pages/NotFound/NotFound";
 
 function AppRoutes() {
@@ -27,6 +28,9 @@ function AppRoutes() {
                 <Route path="about" element={<About />} />
                 <Route path="dashboard" element={<Dashboard />} />
                 <Route path="profile" element={<Profile />} />
+
+                {/* Event Booking - Sprint 9 */}
+                <Route path="event-booking" element={<EventBooking />} />
 
                 {/* 404 Page */}
                 <Route path="*" element={<NotFound />} />

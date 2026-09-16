@@ -56,6 +56,14 @@ function Home() {
                             VIEW EVENT CATEGORIES
                         </NavLink>
 
+                        {/* Go to Event Booking */}
+                        <NavLink
+                            to="/event-booking"
+                            className="primary-btn"
+                        >
+                            BOOK YOUR EVENT →
+                        </NavLink>
+
                     </div>
 
                     {/* ================= STATISTICS ================= */}
