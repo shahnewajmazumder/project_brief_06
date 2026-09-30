@@ -135,7 +135,7 @@ function EventBooking() {
                 {/* Event Name */}
                 <div className="form-group">
                     <label htmlFor="eventName">
-                        Event Name
+                        Event Name *
                     </label>
 
                     <input
@@ -144,6 +144,7 @@ function EventBooking() {
                         placeholder="Enter event name"
                         value={eventName}
                         onChange={(e) => setEventName(e.target.value)}
+                        required
                     />
 
                     {errors.eventName && (
@@ -156,13 +157,14 @@ function EventBooking() {
                 {/* Event Type */}
                 <div className="form-group">
                     <label htmlFor="eventType">
-                        Event Type
+                        Event Type *
                     </label>
 
                     <select
                         id="eventType"
                         value={eventType}
                         onChange={(e) => setEventType(e.target.value)}
+                        required
                     >
                         <option value="">Select event type</option>
                         <option value="Wedding">Wedding</option>
@@ -182,7 +184,7 @@ function EventBooking() {
                 {/* Event Date */}
                 <div className="form-group">
                     <label htmlFor="eventDate">
-                        Event Date
+                        Event Date *
                     </label>
 
                     <input
@@ -190,6 +192,7 @@ function EventBooking() {
                         type="date"
                         value={eventDate}
                         onChange={(e) => setEventDate(e.target.value)}
+                        required
                     />
 
                     {errors.eventDate && (
@@ -202,7 +205,7 @@ function EventBooking() {
                 {/* Number of Guests */}
                 <div className="form-group">
                     <label htmlFor="guests">
-                        Number of Guests
+                        Number of Guests *
                     </label>
 
                     <input
@@ -211,6 +214,7 @@ function EventBooking() {
                         placeholder="Enter number of guests"
                         value={guests}
                         onChange={(e) => setGuests(e.target.value)}
+                        required
                     />
 
                     {errors.guests && (
@@ -223,7 +227,7 @@ function EventBooking() {
                 {/* Venue */}
                 <div className="form-group">
                     <label htmlFor="venue">
-                        Venue
+                        Venue *
                     </label>
 
                     <input
@@ -232,6 +236,7 @@ function EventBooking() {
                         placeholder="Enter preferred venue"
                         value={venue}
                         onChange={(e) => setVenue(e.target.value)}
+                        required
                     />
 
                     {errors.venue && (
@@ -244,7 +249,7 @@ function EventBooking() {
                 {/* Customer Name */}
                 <div className="form-group">
                     <label htmlFor="customerName">
-                        Your Name
+                        Your Name *
                     </label>
 
                     <input
@@ -253,6 +258,7 @@ function EventBooking() {
                         placeholder="Enter your name"
                         value={customerName}
                         onChange={(e) => setCustomerName(e.target.value)}
+                        required
                     />
 
                     {errors.customerName && (
@@ -265,7 +271,7 @@ function EventBooking() {
                 {/* Email */}
                 <div className="form-group">
                     <label htmlFor="email">
-                        Email Address
+                        Email Address *
                     </label>
 
                     <input
@@ -274,6 +280,7 @@ function EventBooking() {
                         placeholder="Enter your email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        required
                     />
 
                     {errors.email && (
@@ -286,7 +293,7 @@ function EventBooking() {
                 {/* Phone */}
                 <div className="form-group">
                     <label htmlFor="phone">
-                        Phone Number
+                        Phone Number *
                     </label>
 
                     <input
@@ -295,6 +302,7 @@ function EventBooking() {
                         placeholder="Enter your phone number"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
+                        required
                     />
 
                     {errors.phone && (
